@@ -36,54 +36,52 @@ public class AddUserPage extends Utility {
     WebElement conFirmMessage;
 
     public String getPageHeader() {
-        Reporter.log("Getting Page Header " + addUserHeader.toString());
+        Reporter.log("Getting Page Header : " + addUserHeader.toString());
         return getTextFromElement(addUserHeader);
     }
 
     public void setUserRoleDropDown(String text) {
-        Reporter.log("Setting User Role " + userRoleDropDown.toString());
+        Reporter.log("Setting User Role : " + text + " to " + userRoleDropDown.toString());
         selectByVisibleTextFromDropDown(userRoleDropDown, text);
     }
 
     public void setEmployeeName(String text) {
-        Reporter.log("Setting Employee Name " + employeeName.toString());
+        Reporter.log("Setting Employee Name : " + text + " to " + employeeName.toString());
         sendTextToElement(employeeName, text);
     }
 
     public void setUserName(String text) {
-        Reporter.log("Setting User Name " + userName.toString());
-        sendTextToElement(userName, text+(int)(Math.random()*10000));
+        Reporter.log("Setting User Name : " + text + " to " + userName.toString());
+        sendTextToElement(userName, text + (int) (Math.random() * 10000));
     }
 
     public void setStatusDropDown(String text) {
-        Reporter.log("Setting Status  " + statusDropDown.toString());
+        Reporter.log("Setting Status  : " + text + " to " + statusDropDown.toString());
         selectByVisibleTextFromDropDown(statusDropDown, text);
     }
 
     public void setPassword(String text) {
-        Reporter.log("Setting Password " + password.toString());
+        Reporter.log("Setting Password : " + text + " to " + password.toString());
         sendTextToElement(password, text);
     }
 
     public void setConfirmPassword(String text) {
-        Reporter.log("Setting Confirm Password " + confirmPassword.toString());
+        Reporter.log("Setting Confirm Password : " + text + " to " + confirmPassword.toString());
         sendTextToElement(confirmPassword, text);
     }
 
     public void setSaveButton() {
-        Reporter.log("Clicking on Save Button " + saveButton.toString());
+        Reporter.log("Clicking on Save Button : " + saveButton.toString());
         clickOnElement(saveButton);
     }
 
     public void setCancelButton() {
-        Reporter.log("Clicking on Cancel Button " + cancelButton.toString());
+        Reporter.log("Clicking on Cancel Button : " + cancelButton.toString());
         sendTextToElement(cancelButton);
     }
 
-    public String getConfirmMessage(){
-        Reporter.log("Getting Confirm Message " + conFirmMessage.toString());
+    public String getConfirmMessage() {
+        Reporter.log("Getting Confirm Message : " + conFirmMessage.toString());
         return getTextFromElement(confirmPassword);
     }
-
-
 }

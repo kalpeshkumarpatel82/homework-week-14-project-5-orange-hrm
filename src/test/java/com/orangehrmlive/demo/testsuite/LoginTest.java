@@ -33,7 +33,6 @@ public class LoginTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(homePage.getWelcomeMessage(), "Welcome", "Failed to login");
         softAssert.assertAll();
-
     }
 
     @Test(groups = {"sanity","smoke","regression"})
@@ -44,7 +43,6 @@ public class LoginTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(homePage.getLogoDisplayed(), true, "Failed to load a logo");
         softAssert.assertAll();
-
     }
 
     @Test(groups = {"regression"})
@@ -57,7 +55,6 @@ public class LoginTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(loginPage.getLoginHeader(), "LOGIN Panel", "Failed to logout");
         softAssert.assertAll();
-
     }
 
 

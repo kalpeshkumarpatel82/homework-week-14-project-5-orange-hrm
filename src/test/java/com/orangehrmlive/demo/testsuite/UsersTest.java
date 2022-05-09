@@ -66,18 +66,22 @@ public class UsersTest extends TestBase {
     }
 
     @Test(groups = {"regression"})
-    public void verifyThatAdminShouldDeleteTheUserSuccessFully() {
+    public void verifyThatAdminShouldDeleteTheUserSuccessFully() throws InterruptedException {
         loginPage.setUserName("Admin");
         loginPage.setPassword("admin123");
         loginPage.setLoginButton();
         homePage.setAdminMenu();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(adminPage.getAdminHeader(), "System Users", "Failed to navigate Admin Page");
-        viewSystemUsersPage.setUserName("admin4532");
+        viewSystemUsersPage.setUserName("Orange1");
         viewSystemUsersPage.setUserRoleDropDown("Admin");
         viewSystemUsersPage.setEmployeeName("Ananya Dash");
         viewSystemUsersPage.setStatus("Disabled");
         viewSystemUsersPage.setSearchButton();
+        Thread.sleep(2000);
+        viewSystemUsersPage.setSearchResultCheckbox();
+        viewSystemUsersPage.setDeleteButton();
+        viewSystemUsersPage.setDeleteRecordDialogueBoxOK();
         softAssert.assertEquals(viewSystemUsersPage.getDeletionConfirmation(), "Successfully Deleted", "Failed to save");
         softAssert.assertAll();
     }
@@ -90,7 +94,7 @@ public class UsersTest extends TestBase {
         homePage.setAdminMenu();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(adminPage.getAdminHeader(), "System Users", "Failed to navigate Admin Page");
-        viewSystemUsersPage.setUserName("test");
+        viewSystemUsersPage.setUserName("Orange");
         viewSystemUsersPage.setUserRoleDropDown("Admin");
         viewSystemUsersPage.setEmployeeName("Ananya Dash");
         viewSystemUsersPage.setStatus("Disabled");

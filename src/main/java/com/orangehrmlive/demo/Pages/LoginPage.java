@@ -27,24 +27,23 @@ public class LoginPage extends Utility {
     WebElement loginPageHeader;
 
 
-
-    public void setUserName(String text){
-        Reporter.log("Sending text to login field " + userName.toString());
-        sendTextToElement(userName,text);
+    public void setUserName(String text) {
+        Reporter.log("Sending Username " + text + " to " + userName.toString());
+        sendTextToElement(userName, text);
     }
 
-    public void setPassword(String text){
-        Reporter.log("Sending text to password field " + password.toString());
-        sendTextToElement(password,text);
+    public void setPassword(String text) {
+        Reporter.log("Sending password " + text + " to " + password.toString());
+        sendTextToElement(password, text);
     }
 
-    public void setLoginButton(){
-        Reporter.log("Clicking on Login button " + loginButton.toString());
+    public void setLoginButton() {
+        Reporter.log("Clicking on Login button : " + loginButton.toString());
         clickOnElement(loginButton);
     }
 
-    public String getLoginHeader(){
-        Reporter.log("Getting on Login Page Header " + loginPageHeader.toString());
+    public String getLoginHeader() {
+        Reporter.log("Getting Login Page Header : " + loginPageHeader.toString());
         return getTextFromElement(loginPageHeader);
     }
 

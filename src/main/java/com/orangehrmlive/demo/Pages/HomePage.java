@@ -36,39 +36,37 @@ public class HomePage extends Utility {
     }
 
     public void setLogOutButton() {
-        Reporter.log("Clicking on User logOut Button " + logOutButton.toString());
+        Reporter.log("Clicking on User logOut Button : " + logOutButton.toString());
         clickOnElement(logOutButton);
     }
 
-
     public void setAdminMenu() {
-        Reporter.log("Clicking on Admin link " + adminMenu.toString());
+        Reporter.log("Clicking on Admin link : " + adminMenu.toString());
         clickOnElement(adminMenu);
     }
 
     public boolean getLogoDisplayed() {
-        Reporter.log("Checking  Logo " + logo.toString());
+        Reporter.log("Checking  Logo : " + logo.toString());
         return verifyThatElementIsDisplayed(logo);
     }
 
     public void setPimMenu() {
-        Reporter.log("Clicking on PIM link " + pimMenu.toString());
+        Reporter.log("Clicking on PIM link : " + pimMenu.toString());
         clickOnElement(pimMenu);
     }
 
     public void setLeaveMenu() {
-        Reporter.log("Clicking on Leave link " + leaveMenu.toString());
+        Reporter.log("Clicking on Leave link : " + leaveMenu.toString());
         clickOnElement(leaveMenu);
     }
 
-
     public String getWelcomeMessage() {
-        Reporter.log("Clicking on Welcome link " + welcomeMessage.toString());
+        Reporter.log("Clicking on Welcome link : " + welcomeMessage.toString());
         return getTextFromElement(welcomeMessage).substring(0, 7);
     }
 
     public void setDashboardMenu() {
-        Reporter.log("Clicking on Deshboard link " + dashboardMenu.toString());
+        Reporter.log("Clicking on Dashboard link : " + dashboardMenu.toString());
         clickOnElement(dashboardMenu);
     }
 
