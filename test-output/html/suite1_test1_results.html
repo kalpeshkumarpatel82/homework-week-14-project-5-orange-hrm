@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - regression</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>regression</h1>
+<p>
+  Test duration: 109.884s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.UsersTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  adminShouldAddUserSuccessFully
+      </td>
+  <td class="duration">
+    6.079s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Clicking on Admin link [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //b[contains(text(),&apos;Admin&apos;)]]<br />
+                                Getting Admin Header [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //div[@class=&apos;head&apos;]/h1]<br />
+                                Clicking on Add Button [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;btnAdd&apos;]]<br />
+                                Setting User Role [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //select[@id=&apos;systemUser_userType&apos;]]<br />
+                                Setting Employee Name [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;systemUser_employeeName_empName&apos;]]<br />
+                                Setting User Name [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;systemUser_userName&apos;]]<br />
+                                Setting Status&nbsp; [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //select[@id=&apos;systemUser_status&apos;]]<br />
+                                Setting Password [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;systemUser_password&apos;]]<br />
+                                Setting Confirm Password [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;systemUser_confirmPassword&apos;]]<br />
+                                Clicking on Save Button [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //input[@id=&apos;btnSave&apos;]]<br />
+                                Getting Confirm Message [[ChromeDriver: chrome on WINDOWS (8072c61d6e105982cfd82d1016d109ef)] -&gt; xpath: //*[contains(text(),&apos;Successfully Saved&apos;)]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: The following asserts failed:<br/>
+	Failed to save expected [Successfully Saved] but found []</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)<br />
+              org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.adminShouldAddUserSuccessFully(UsersTest.java:46)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchTheUserCreatedAndVerifyIt
+      </td>
+  <td class="duration">
+    45.807s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Clicking on Admin link [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //b[contains(text(),&apos;Admin&apos;)]]<br />
+                                Getting Admin Header [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //div[@class=&apos;head&apos;]/h1]<br />
+                                Setting User Name [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //input[@id=&apos;searchSystemUser_userName&apos;]]<br />
+                                Setting user role&nbsp; [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //select[@id=&apos;searchSystemUser_userType&apos;]]<br />
+                                Setting Employee Name [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //input[@id=&apos;searchSystemUser_employeeName_empName&apos;]]<br />
+                                Setting user status&nbsp; [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //select[@id=&apos;searchSystemUser_status&apos;]]<br />
+                                Clicking on Search Button&nbsp; [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //input[@id=&apos;searchBtn&apos;]]<br />
+                                getting search reasult&nbsp; [[ChromeDriver: chrome on WINDOWS (1d73b1cda869b864eeca960d49763ac3)] -&gt; xpath: //div[@id=&apos;tableWrapper&apos;]//tbody[1]/tr/td[2]/a]<br />
+                                Clicking on Search username checkbox&nbsp; Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;ohrmList_chkSelectRecord_55&apos;]&apos;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ohrmList_chkSelectRecord_55&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;HRIDAY&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [1d73b1cda869b864eeca960d49763ac3, findElement {using=xpath, value=//input[@id=&apos;ohrmList_chkSelectRecord_55&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Kalpesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56668}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56668/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 1d73b1cda869b864eeca960d49763ac3</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy14.click(Unknown Source)<br />
+              com.orangehrmlive.demo.utility.Utility.clickOnElement(Utility.java:56)<br />
+              com.orangehrmlive.demo.Pages.ViewSystemUsersPage.setSearchResultCheckbox(ViewSystemUsersPage.java:92)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.searchTheUserCreatedAndVerifyIt(UsersTest.java:63)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatAdminShouldDeleteTheUserSuccessFully
+      </td>
+  <td class="duration">
+    5.287s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Clicking on Admin link [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //b[contains(text(),&apos;Admin&apos;)]]<br />
+                                Getting Admin Header [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //div[@class=&apos;head&apos;]/h1]<br />
+                                Setting User Name [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //input[@id=&apos;searchSystemUser_userName&apos;]]<br />
+                                Setting user role&nbsp; [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //select[@id=&apos;searchSystemUser_userType&apos;]]<br />
+                                Setting Employee Name [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //input[@id=&apos;searchSystemUser_employeeName_empName&apos;]]<br />
+                                Setting user status&nbsp; [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //select[@id=&apos;searchSystemUser_status&apos;]]<br />
+                                Clicking on Search Button&nbsp; [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //input[@id=&apos;searchBtn&apos;]]<br />
+                                Getting on delete confirm&nbsp; [[ChromeDriver: chrome on WINDOWS (138624a2c6691820fc4d3cebed527e58)] -&gt; xpath: //*[contains(text(),&apos;Successfully Saved&apos;)]]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: The following asserts failed:<br/>
+	Failed to save expected [Successfully Deleted] but found []</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)<br />
+              org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)<br />
+              com.orangehrmlive.demo.testsuite.UsersTest.verifyThatAdminShouldDeleteTheUserSuccessFully(UsersTest.java:82)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatTheLogoDisplayOnHomePage
+      </td>
+  <td class="duration">
+    3.061s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (3a1afa6f11626cd0e7ee81689a5b1143)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (3a1afa6f11626cd0e7ee81689a5b1143)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (3a1afa6f11626cd0e7ee81689a5b1143)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Checking&nbsp; Logo [[ChromeDriver: chrome on WINDOWS (3a1afa6f11626cd0e7ee81689a5b1143)] -&gt; xpath: //body/div[@id=&apos;wrapper&apos;]/div[@id=&apos;branding&apos;]/a[1]/img[1]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldLogOutSuccessFully
+      </td>
+  <td class="duration">
+    4.335s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (10a5b0dc1c152c935fe97d91f803985e)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (10a5b0dc1c152c935fe97d91f803985e)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (10a5b0dc1c152c935fe97d91f803985e)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Clicking on User LOgo link [[ChromeDriver: chrome on WINDOWS (10a5b0dc1c152c935fe97d91f803985e)] -&gt; xpath: //a[@id=&apos;welcome&apos;]]<br />
+                                Clicking on User logOut Button [[ChromeDriver: chrome on WINDOWS (10a5b0dc1c152c935fe97d91f803985e)] -&gt; xpath: //a[contains(text(),&apos;Logout&apos;)]]<br />
+                                Getting on Login Page Header [[ChromeDriver: chrome on WINDOWS (10a5b0dc1c152c935fe97d91f803985e)] -&gt; xpath: //div[@id=&apos;logInPanelHeading&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldLoginSuccessFully
+      </td>
+  <td class="duration">
+    3.901s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (b38a16cc2e2e5d1bba965960513b239e)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (b38a16cc2e2e5d1bba965960513b239e)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (b38a16cc2e2e5d1bba965960513b239e)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Clicking on Welcome link [[ChromeDriver: chrome on WINDOWS (b38a16cc2e2e5d1bba965960513b239e)] -&gt; xpath: //a[@id=&apos;welcome&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.orangehrmlive.demo.testsuite.UsersTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  searchTheDeletedUserAndVerifyTheMessageNoRecordFound
+      </td>
+  <td class="duration">
+    5.332s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sending text to login field [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //input[@id=&apos;txtUsername&apos;]]<br />
+                                Sending text to password field [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //input[@id=&apos;txtPassword&apos;]]<br />
+                                Clicking on Login button [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //input[@id=&apos;btnLogin&apos;]]<br />
+                                Clicking on Admin link [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //b[contains(text(),&apos;Admin&apos;)]]<br />
+                                Getting Admin Header [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //div[@class=&apos;head&apos;]/h1]<br />
+                                Setting User Name [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //input[@id=&apos;searchSystemUser_userName&apos;]]<br />
+                                Setting user role&nbsp; [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //select[@id=&apos;searchSystemUser_userType&apos;]]<br />
+                                Setting Employee Name [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //input[@id=&apos;searchSystemUser_employeeName_empName&apos;]]<br />
+                                Setting user status&nbsp; [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //select[@id=&apos;searchSystemUser_status&apos;]]<br />
+                                Clicking on Search Button&nbsp; [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //input[@id=&apos;searchBtn&apos;]]<br />
+                                getting search reasult&nbsp; [[ChromeDriver: chrome on WINDOWS (68404024652d9d242271bd65ad73eaff)] -&gt; xpath: //td[contains(text(),&apos;No Records Found&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
