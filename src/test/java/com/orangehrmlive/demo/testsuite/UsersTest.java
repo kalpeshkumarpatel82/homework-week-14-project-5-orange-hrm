@@ -25,7 +25,7 @@ public class UsersTest extends TestBase {
         viewSystemUsersPage = new ViewSystemUsersPage();
     }
 
-    @Test(groups = {"sanity","regression"})
+    @Test(priority = 0, groups = {"sanity", "regression"})
     public void adminShouldAddUserSuccessFully() throws InterruptedException {
         loginPage.setUserName("Admin");
         loginPage.setPassword("admin123");
@@ -46,7 +46,7 @@ public class UsersTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(groups = {"sanity","smoke","regression"})
+    @Test(priority = 1, groups = {"sanity", "smoke", "regression"})
     public void searchTheUserCreatedAndVerifyIt() {
         loginPage.setUserName("Admin");
         loginPage.setPassword("admin123");
@@ -65,7 +65,7 @@ public class UsersTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(groups = {"regression"})
+    @Test(priority = 2, groups = {"regression"})
     public void verifyThatAdminShouldDeleteTheUserSuccessFully() throws InterruptedException {
         loginPage.setUserName("Admin");
         loginPage.setPassword("admin123");
@@ -86,7 +86,7 @@ public class UsersTest extends TestBase {
         softAssert.assertAll();
     }
 
-    @Test(groups = {"regression"})
+    @Test(priority = 3, groups = {"regression"})
     public void searchTheDeletedUserAndVerifyTheMessageNoRecordFound() {
         loginPage.setUserName("Admin");
         loginPage.setPassword("admin123");

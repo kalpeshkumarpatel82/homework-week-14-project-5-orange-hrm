@@ -30,7 +30,7 @@ public class HomePage extends Utility {
     WebElement logOutButton;
 
     public void setUserProfileLogoHoverAndClick() {
-        Reporter.log("Clicking on User LOgo link " + welcomeMessage.toString());
+        Reporter.log("Clicking on User Logo link " + welcomeMessage.toString());
         mouseHoverToElement(welcomeMessage);
         clickOnElement(welcomeMessage);
     }
