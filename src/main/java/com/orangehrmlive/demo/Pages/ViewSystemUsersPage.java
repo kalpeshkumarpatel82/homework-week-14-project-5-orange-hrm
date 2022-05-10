@@ -53,7 +53,9 @@ public class ViewSystemUsersPage extends Utility {
     @FindBy(xpath = "//input[@id='dialogDeleteBtn']")
     WebElement deleteRecordDialogueBoxOK;
 
-    @FindBy(xpath = "//*[contains(text(),'Successfully')]")
+//    @FindBy(xpath = "//*[contains(text(),'Successfully')]")
+//    WebElement successConfirmMessage;
+    @FindBy(xpath = "//div[@class='message success fadable']")
     WebElement successConfirmMessage;
 
     public String getPageHeader() {

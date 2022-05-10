@@ -32,8 +32,10 @@ public class AddUserPage extends Utility {
     WebElement cancelButton;
     @FindBy(xpath = "//h1[@id='UserHeading']")
     WebElement addUserHeader;
-    @FindBy(xpath = "//*[contains(text(),'Successfully Saved')]")
-    WebElement conFirmMessage;
+//    @FindBy(xpath = "//*[contains(text(),'Successfully Saved')]")
+//    WebElement conFirmMessage;
+    @FindBy(xpath = "//div[@class='message success fadable']")
+    WebElement confirmMessage;
 
     public String getPageHeader() {
         Reporter.log("Getting Page Header : " + addUserHeader.toString());
@@ -81,7 +83,8 @@ public class AddUserPage extends Utility {
     }
 
     public String getConfirmMessage() {
-        Reporter.log("Getting Confirm Message : " + conFirmMessage.toString());
-        return getTextFromElement(confirmPassword);
+        Reporter.log("Getting Confirm Message : " + confirmMessage.toString());
+        mouseHoverToElement(confirmMessage);
+        return getTextFromElement(confirmMessage);
     }
 }

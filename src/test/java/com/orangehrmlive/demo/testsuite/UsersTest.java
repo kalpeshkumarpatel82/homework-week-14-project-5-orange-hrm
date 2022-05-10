@@ -41,7 +41,7 @@ public class UsersTest extends TestBase {
         addUserPage.setPassword("12345678");
         addUserPage.setConfirmPassword("12345678");
         addUserPage.setSaveButton();
-        Thread.sleep(100);
+        Thread.sleep(500);
         softAssert.assertEquals(addUserPage.getConfirmMessage(), "Successfully Saved", "Failed to save");
         softAssert.assertAll();
     }
@@ -73,7 +73,7 @@ public class UsersTest extends TestBase {
         homePage.setAdminMenu();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(adminPage.getAdminHeader(), "System Users", "Failed to navigate Admin Page");
-        viewSystemUsersPage.setUserName("Orange1");
+        viewSystemUsersPage.setUserName("Orange");
         viewSystemUsersPage.setUserRoleDropDown("Admin");
         viewSystemUsersPage.setEmployeeName("Ananya Dash");
         viewSystemUsersPage.setStatus("Disabled");
